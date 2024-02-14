@@ -22,15 +22,15 @@ function calcular(){
     let qtdTotalCarneM = carnePP (duracao)/1.5 * mulheres;
     let qtdTotalCarneC = carnePP (duracao)/2 * criancas;
     let qtdTotalCervejaH = cervejaPP (duracao) * homens; 
-    let qtdTotalCervejaM = cervejaPP (duracao)/1.5 * mulheres; 
+    let qtdTotalCervejaM = cervejaPP (duracao)/2 * mulheres; 
     let qtdTotalBebidasH = bebidasPP (duracao)/1.5 * homens; 
     let qtdTotalBebidasM = bebidasPP (duracao)/2 * mulheres; 
     let qtdTotalBebidasC = bebidasPP (duracao)/2 * criancas; 
 
 
-    resultado.innerHTML = `<p>${Math.ceil(qtdTotalCarneH/1000 + qtdTotalCarneM/1000 + qtdTotalCarneC/1000)} Kg de Carne / Linguiça / Asinha</p>`
-    resultado.innerHTML += `<p>${Math.ceil(qtdTotalCervejaH/355 + qtdTotalCervejaM/355)} Latas de Cerveja</p>`
-    resultado.innerHTML += `<p>${Math.ceil(qtdTotalBebidasH/2000 + qtdTotalBebidasM/2000 + qtdTotalBebidasC/2000)} Pet's 2L de Refrigerante</p>`
+    resultado.innerHTML = `<p>Para essa quantidade de pessoas será necessário comprar ${Math.ceil(qtdTotalCarneH/1000 + qtdTotalCarneM/1000 + qtdTotalCarneC/1000)}kg de carne podendo variar entre carne, linguiça e frango. Poderá também servir acompanhamentos tradicionais para churrasco como arroz, farofa, vinagrete, maionese de batatas e saladas variadas.</p>`
+    resultado.innerHTML += `<p>Se desejar servir bebidas alcoólicas você poderá comprar ${Math.ceil(qtdTotalCervejaH/355 + qtdTotalCervejaM/355)} latas de cerveja para os adultos.</p>`
+    resultado.innerHTML += `<p>Com relação as demais bebidas poderá comprar ${Math.ceil(qtdTotalBebidasH/2000 + qtdTotalBebidasM/2000 + qtdTotalBebidasC/2000)} pet's 2L de refrigerantes, podendo fazer a troca de parte dessa quantidade por água mineral e sucos.</p>`
 }
 
 
@@ -58,3 +58,7 @@ function bebidasPP (duracao){
         return 1000;
     }
 }
+
+function recarregarAPagina(){
+    window.location.reload();
+} 
