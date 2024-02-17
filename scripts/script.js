@@ -4,8 +4,8 @@
 // criança vale por 0,5 
 
 var nome = prompt("Qual é o seu nome?");
-var tipoCarne = prompt("Quais são os tipos de carnes que você gosta em um churrasco? Ex: bovina, suína, linguiça e frango");
-var tipoAcompanhamento = prompt("Ultima pergunta: Quais os acompanhamentos não podem faltar? Ex: arroz, farofa, vinagrete, maionese e saladas");
+var tipoCarne = prompt("Quais são os tipos de carnes que gostaria de servir no churrasco? Ex: carne bovina, suína, linguiça e frango");
+var tipoAcompanhamento = prompt("Última pergunta: Quais os acompanhamentos não podem faltar? Ex: arroz, farofa, vinagrete, maionese e saladas");
 
 let inputHomens = document.getElementById("homens");
 let inputMulheres = document.getElementById("mulheres");
@@ -32,8 +32,8 @@ function calcular(){
     let qtdTotalBebidasC = bebidasPP (duracao)/2 * criancas; 
 
     resultado.innerHTML = `<p>Olá ${nome}!</p>` 
-    resultado.innerHTML += `<p>Para essa quantidade de pessoas será necessário comprar ${Math.ceil(qtdTotalCarneH/1000 + qtdTotalCarneM/1000 + qtdTotalCarneC/1000)}kg de carnes podendo variar entre ${tipoCarne}. Poderá também servir acompanhamentos tradicionais para churrasco como ${tipoAcompanhamento}.</p>`
-    resultado.innerHTML += `<p>Se desejar servir bebidas alcoólicas você poderá comprar ${Math.ceil(qtdTotalCervejaH/355 + qtdTotalCervejaM/355)} latas de cerveja para os adultos. Com relação as demais bebidas poderá comprar ${Math.ceil(qtdTotalBebidasH/2000 + qtdTotalBebidasM/2000 + qtdTotalBebidasC/2000)} pet's 2L de refrigerantes, podendo fazer a troca de parte dessa quantidade por água mineral e sucos.</p>`
+    resultado.innerHTML += `<p>Para essa quantidade de pessoas será necessário ${Math.ceil(qtdTotalCarneH/1000 + qtdTotalCarneM/1000 + qtdTotalCarneC/1000)}kg de carnes podendo variar entre ${tipoCarne}. Poderá também servir acompanhamentos tradicionais para churrasco como ${tipoAcompanhamento}, entre outros à sua preferência.</p>`
+    resultado.innerHTML += `<p>Se desejar servir bebidas alcoólicas será necessário ${Math.ceil(qtdTotalCervejaH/355 + qtdTotalCervejaM/355)} latas de cerveja para os adultos. Com relação as demais bebidas precisará de ${Math.ceil(qtdTotalBebidasH/2000 + qtdTotalBebidasM/2000 + qtdTotalBebidasC/2000)} pet's 2L de refrigerantes, podendo trocar parte dessa quantidade por água mineral e sucos.</p>`
 }
 
 
