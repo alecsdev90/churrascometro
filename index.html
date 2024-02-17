@@ -10,26 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="logo">
-        <h1 class="protest-revolution-regular">CHURRASCÔMETRO</h1>
-        <p class="titulo2">Calcule o seu churrasco na medida certa!</p>
-    </div>
 
-    <div class="container">
-        <img src="./img/homem.png" alt="">
-        <input id="homens" name="homens" type="number" placeholder="Homens">
-        <img src="./img/mulher.png" alt="">
-        <input id="mulheres" name="mulheres" type="number" placeholder="Mulheres">
-        <img src="./img/criancas.png" alt="">
-        <input id="criancas" name="criancas" type="number" placeholder="Crianças">
-        <img src="./img/tempo.png" alt="">
-        <input id="duracao" name="duracao" type="number" placeholder="Duração (h)">
-        <button onclick="calcular()">CALCULAR</button>
-        <button type="button" onClick="recarregarAPagina()">LIMPAR</button>        
+    <header>
+        <div class="logo">
+            <h1 class="protest-revolution-regular">CHURRASCÔMETRO</h1>
+            <!-- <p class="titulo2">Calcule o seu churrasco na medida certa!</p> -->
+        </div>
+    
+        </div id="boasVindas">
+        
+        </div>
+    </header>
+    <div class="faixa">   
+    </div>
+    <section class="gridContainer">
+        <div class="container">
+            <img src="./img/homem.png" alt="">
+            <img src="./img/mulher.png" alt="">
+            <img class="kids" src="./img/criancas.png" alt="">
+            <img  class="tempo" src="./img/tempo.png" alt="">            
+            <input id="homens" name="homens" type="number" placeholder="Homens">
+            <input id="mulheres" name="mulheres" type="number" placeholder="Mulheres">
+            <input id="criancas" name="criancas" type="number" placeholder="Crianças">
+            <input id="duracao" name="duracao" type="number" placeholder="Duração (h)">       
+        </div>
+    </section>
+    <div>
+    <div class="buttons">
+        <button class="b1" onclick="calcular()">Calcular</button>
+        <button type="button" onClick="recarregarAPagina()">Refazer</button> 
     </div>
     <div id="resultado">
 
     </div>  
+
+    <footer>
+        2024 | Desenvolvido por Alexandre Costa
+    </footer>
 
     <script src="./scripts/script.js"></script>
     

@@ -4,156 +4,71 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(226, 220, 220);
-    text-align: center;
+header{
+    width: 100vw;
 }
 
 .logo{
-    height: 190px;
-    width: 100vw;
+    height: 150px;
+    width: 100%;
     background-image: url(../img/bifes-grelhados-com-especiarias-e-ervas-no-churrasco-outdoorai-generative.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0;
+    text-align: center;
 }
 
 .protest-revolution-regular {
     font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3em;
-    padding-top: 50px;
-    color: blanchedalmond;
-    background-color: ;
-
-}  
-
-img{
-    max-width: 40px;
-    display: inline-block;
-    margin: 10px;
-}
-
-.titulo2{
-    background-color: rgba(250, 235, 215, 0.8);
-    border-radius: 5px 15px;
-    width: fit-content;
-    margin: auto;
-}
-
-.container{
-    font-family:'Times New Roman', Times, serif;
     width: 40%;
-    float: left;
-    color: white;
-    border-radius: 15px;
-    max-width: 50vw;
-    height: 400px;
-    margin-top: 45px;
-}
-
-#resultado{
-    margin-top: 100px;
-    margin-right: ;
-    display: inline-block;
-    width: 60%;
-    padding: 30px;
-}
-
-input{
-    display: block;
-    width: 80%;
-    margin: auto;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color:rgba(22, 22, 22,0.9);
-    color: white;
-    font-size: 20px;
-    border-radius: 5px 15px;
-
-}
-
-button{
-    background-color:rgb(141, 8, 8);
-    border: 1px solid black;
-    padding: 8px;
-    margin: 10px;
-    border-radius: 5px 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-}
-
-button:hover{
-    background-color: rgb(31, 19, 3);
-    cursor:pointer;
-    color: white;
-}
-
-p{
-    font-size: 20px;
-    padding: 5px;
-    color: black;
-    font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 90%;
-    margin: 15px;
-}
-
-@media (max-width: 480px) {
-    
-.logo{
-    height: 190px;
-    width: 100vw;
-    background-image: url(../img/bifes-grelhados-com-especiarias-e-ervas-no-churrasco-outdoorai-generative.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0;
-}
-
-.protest-revolution-regular {
-    font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.4em;
-    margin: 15px;
+    font-size: 3.2em;
+    margin: auto;
     padding-top: 50px;
-    color: blanchedalmond;
-    background-color: ;
+    color: rgb(228, 224, 217);
 }  
 
-img{
-    max-width: 35px;
-    display: inline-block;
-    margin: 10px;
+/* .titulo2{
+    background-color: rgba(62, 37, 3, 0.8);
+    color: aliceblue;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40% ;
+    border-radius: 5px;
+    margin: auto;
+} */
+
+.faixa{
+    width: 100%;
+    height: 5px;
+    background-color: rgba(62, 37, 3, 0.8);
+    margin-top: 3px;
 }
 
-.titulo2{
-    background-color: rgba(250, 235, 215, 0.8);
-    border-radius: 5px 15px;
-    width: fit-content;
-    margin: auto;
-    font-size: 1em;
+.gridContainer{
+    background-color: rgba(243, 219, 204, 0.3);
 }
 
 .container{
-    font-family:'Times New Roman', Times, serif;
-    width: 100%;
-    float: left;
-    color: white;
-    border-radius: 15px;
-    max-width: 100vw;
-    height: 400px;
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 90px 90px 
 }
 
-#resultado{
-    width: 80%;
-    background-color: rgba(255, 127, 80, 0.3);
-    text-align:center;
-    padding-left: 0;
+img{
+    max-width: 45px;
+    margin: 70px auto 10px auto;
+}
+
+img.kids{
+    max-width: 50px;
+}
+
+img.tempo{
+    max-width: 36px;
 }
 
 input{
@@ -164,20 +79,28 @@ input{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     text-align: center;
-    background-color:rgba(22, 22, 22,0.9);
-    color: white;
-    font-size: 20px;
-    border-radius: 5px 15px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    opacity: 0.8;
+}
 
+.buttons{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(243, 219, 204, 0.3);
 }
 
 button{
-    background-color:rgb(141, 8, 8);
+    background-color:rgb(182, 70, 32);
     border: 1px solid black;
-    padding: 8px;
-    margin: 10px;
-    border-radius: 5px 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 13px;
 }
@@ -185,14 +108,181 @@ button{
 button:hover{
     background-color: rgb(31, 19, 3);
     cursor:pointer;
-    color: white;
+    opacity: 0.8;
+}
+
+.b1{
+    background-color: rgb(12, 54, 102);
+}
+
+#resultado {
+    background-color: rgba(243, 219, 204, 0.3);
+    text-align:left ;
+    padding: 30px;
+    height: 300px;
 }
 
 p{
     font-size: 20px;
+    padding: 10px;
     color: black;
     font-weight: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(245, 249, 249);
+    border-radius: 5px;
 }
+
+footer{
+    text-align: center;
 }
+
+@media screen and (max-width: 480px){
+    .logo{
+        padding: 30px;
+        height: 180px;
+        margin: auto;
+        background-image: url(../img/bifes-grelhados-com-especiarias-e-ervas-no-churrasco-outdoorai-generative.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0;
+        text-align: center;
+    }
+    
+    .protest-revolution-regular {
+        font-family: "Protest Revolution", sans-serif;
+        width: 300px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.2em;
+        margin: auto;
+        padding-top: 50px;
+        color: rgb(228, 224, 217);
+    }  
+    
+    /* .titulo2{
+        background-color: rgba(62, 37, 3, 0.8);
+        color: aliceblue;
+        font-size: 1.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 40% ;
+        border-radius: 5px;
+        margin: auto;
+    } */
+    
+    .faixa{
+        width: 100%;
+        height: 5px;
+        background-color: rgba(62, 37, 3, 0.8);
+        margin-top: 3px;
+    }
+    
+    .gridContainer{
+        background-color: rgba(243, 219, 204, 0.3);
+        height: 300px;
+    }
+    
+    .container{
+        max-width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 90px 90px ;
+    }
+    
+    img{
+        max-width: 45px;
+        margin: 70px auto 10px auto;
+    }
+    
+    img.kids{
+        max-width: 50px;
+        position: relative;
+        top: 30px;
+    }
+    
+    img.tempo{
+        max-width: 36px;
+        position: relative;
+        top: 37px;
+    }
+    
+    #homens{
+        position: relative;
+        bottom: 50px;
+    }
+
+    #mulheres{
+        position: relative;
+        bottom: 50px;
+    }
+
+    #criancas{
+        position: relative;
+        top: 30px;
+    }
+
+    #duracao{
+        position: relative;
+        top: 30px;
+    }
+
+    .buttons{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(243, 219, 204, 0.3);
+    }
+    
+    button{
+        background-color:rgb(182, 70, 32);
+        border: 1px solid black;
+        padding: 5px 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+    
+    button:hover{
+        background-color: rgb(31, 19, 3);
+        cursor:pointer;
+        opacity: 0.8;
+    }
+    
+    .b1{
+        background-color: rgb(12, 54, 102);
+    }
+
+    div{
+
+    }
+    
+    #resultado {
+        background-color: rgba(243, 219, 204, 0.3);
+        text-align:initial;
+        padding:10px;
+        height: 100%;
+    }
+    
+    p{
+        font-size: 20px;
+        padding: 10px;
+        color: black;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 70%;
+        margin: auto;
+        background-color: rgb(245, 249, 249);
+        border-radius: 5px;
+    }
+    
+    footer{
+        text-align: center;
+    }
+}
+    
