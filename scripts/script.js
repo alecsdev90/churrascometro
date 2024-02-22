@@ -3,9 +3,9 @@
 // refrigerante - 1000ml por pessoa + de 6h - 1500ml    
 // criança vale por 0,5 
 
-var nome = prompt("Qual é o seu nome?");
-var tipoCarne = prompt("Quais são os tipos de carnes que gostaria de servir no churrasco? Ex: carne bovina, suína, linguiça e frango");
-var tipoAcompanhamento = prompt("Última pergunta: Quais os acompanhamentos não podem faltar? Ex: arroz, farofa, vinagrete, maionese e saladas");
+// var nome = prompt("Qual é o seu nome?");
+// var tipoCarne = prompt("Quais são os tipos de carnes que gostaria de servir no churrasco? Ex: carne bovina, suína, linguiça e frango");
+// var tipoAcompanhamento = prompt("Última pergunta: Quais acompanhamentos não podem faltar? Ex: arroz, farofa, vinagrete, maionese e saladas");
 
 let inputHomens = document.getElementById("homens");
 let inputMulheres = document.getElementById("mulheres");
@@ -16,6 +16,12 @@ let resultado = document.getElementById("resultado");
 
 function calcular(){
     console.log("Calculando...");
+
+    var nome = prompt("Qual é o seu nome?");
+    var tipoCarne = prompt("Quais são os tipos de carnes que gostaria de servir no churrasco? Ex: carne bovina, suína, linguiça e frango");
+    var tipoAcompanhamento = prompt("Última pergunta: Quais acompanhamentos não podem faltar? Ex: arroz, farofa, vinagrete, maionese e saladas");
+    alert("Obrigado " + nome + "! Abaixo está o cálculo.")
+   
 
     let homens = inputHomens.value;
     let mulheres = inputMulheres.value;
